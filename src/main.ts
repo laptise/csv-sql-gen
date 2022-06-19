@@ -51,7 +51,3 @@ export const emit = () => {
   const configs = callConfigFile();
   configs.map(convertCsv);
 };
-
-const jj2j2 = 12;
-export const jj = 12;
-export default jj2j2;
