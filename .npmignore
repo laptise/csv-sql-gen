@@ -1,1 +1,9 @@
 src
+node_modules
+*.sql
+*.csv
+csv-sql-gen.config.json
+.DS_Store
+tsconfig.json
+webpack.config.js
+dist/main.js

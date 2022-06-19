@@ -1,6 +1,6 @@
 {
   "name": "csv-sql-gen",
-  "version": "0.0.2",
+  "version": "0.1.1",
   "description": "Generate sql(s) from csv file(s)",
   "main": "dist/main.js",
   "type": "commonjs",
@@ -8,6 +8,11 @@
     "build": "webpack",
     "watch": "webpack -w"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laptise/csv-sql-gen.git"
+  },
+  "homepage": "https://github.com/laptise/csv-sql-gen#readme",
   "bin": {
     "csv-sql-gen": "bin/cli.js"
   },
