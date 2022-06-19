@@ -42,3 +42,4 @@ Key and Value is meaning
 | csv       | Path to csv                               |
 | sql       | Path to sql what generated from this tool |
 | tableName | Name of the table (Insert target)         |
+# csv-sql-gen
