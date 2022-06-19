@@ -1,0 +1,5 @@
+node_modules
+*.sql
+*.csv
+csv-sql-gen.config.json
+.DS_Store
