@@ -6,10 +6,15 @@ type Config = {
   sql: string;
   tableName: string;
 };
-console.log("root", path.resolve("./"));
-const readFile = async () => {};
-const callConfigFile = (): Config[] => {
-  const file = fs.readFileSync("csv-sql-gen.config.json");
+
+/**Read file from root path */
+const callConfigFile = async (): Promise<Config[]> => {
+  const file = await new Promise<Buffer>((res, rej) => {
+    fs.readFile("csv-sql-gen.config.json", (err, data) => {
+      if (err) rej("Cannot load file csv-sql-gen.config.json frrom " + path.resolve("./"));
+      res(data);
+    });
+  });
   const data = JSON.parse(file.toString());
   return data;
 };
@@ -47,7 +52,7 @@ const convertCsv = async ({ sql: sqlPath, csv, tableName }: Config) => {
   }
 };
 
-export const emit = () => {
-  const configs = callConfigFile();
-  configs.map(convertCsv);
+export const emit = async () => {
+  const configs = await callConfigFile().catch(console.log);
+  configs?.map?.(convertCsv);
 };
