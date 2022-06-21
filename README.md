@@ -2,6 +2,12 @@
 
 This tool generate sql from csv file.
 
+First, install the package.
+
+```bash
+$ npm install csv-sql-gen
+```
+
 You can easily run on CLI with `csv-sql-gen`.
 
 ```bash

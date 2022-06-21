@@ -1,6 +1,6 @@
 {
   "name": "csv-sql-gen",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Generate sql(s) from csv file(s) on CLI.",
   "main": "dist/main.js",
   "type": "commonjs",
