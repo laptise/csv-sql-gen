@@ -10,11 +10,11 @@ $ csv-sql-gen
 
 So you can set this command in your `docker-compose` command or build task.
 
-## Set up
+## Set `csv-sql-gen.config.json`
 
 csv-sql-gen needs setting file named `csv-sql-gen.config.json`
 
-Make json file named `csv-sql-gen.config.json` in your project root folder, Then fill it.
+Make json file named `csv-sql-gen.config.json` in your **project root folder**, Then fill it.
 
 The rule is simple, please look below
 
@@ -33,7 +33,7 @@ The rule is simple, please look below
 ]
 ```
 
-You should **start with Array.** Then write properties inside each of them.
+Then write properties inside each of them.
 
 Key and Value is meaning
 
